@@ -189,6 +189,14 @@ body {
     background: transparent;
     color: white;
     border: 2px solid rgba(255,255,255,0.8);
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn-outline:hover {
@@ -196,6 +204,65 @@ body {
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+}
+
+/* Special styling for outline buttons in service cards */
+.service-card .btn-outline {
+    background: transparent;
+    color: #667eea;
+    border: 2px solid #667eea;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card .btn-outline:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Button arrow styling */
+.btn-arrow {
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.service-card .btn-outline:hover .btn-arrow {
+    transform: translateX(-3px);
+}
+
+/* Enhanced button visibility */
+.service-card .btn-outline {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card .btn-outline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.service-card .btn-outline:hover::after {
+    left: 100%;
 }
 
 .btn-whatsapp {
