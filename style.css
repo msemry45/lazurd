@@ -250,6 +250,39 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
+/* Category Sections */
+.category-section {
+    margin-bottom: 4rem;
+}
+
+.category-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.subcategory-section {
+    margin-bottom: 3rem;
+}
+
+.subcategory-title {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    padding: 0.75rem;
+    background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
 .service-card {
     background: white;
     border-radius: 15px;
@@ -392,6 +425,16 @@ body {
     .footer-contact {
         text-align: center;
     }
+    
+    .category-title {
+        font-size: 1.5rem;
+        padding: 0.75rem;
+    }
+    
+    .subcategory-title {
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -419,6 +462,16 @@ body {
     
     .service-content {
         padding: 1rem;
+    }
+    
+    .category-title {
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+    
+    .subcategory-title {
+        font-size: 1.1rem;
+        padding: 0.5rem;
     }
 }
 
